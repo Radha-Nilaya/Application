@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script src="D:\SHUBHAM\swiggy/index.js"></script>
+
+
+
+    <title>swiggy clone</title>
+</head>
+
+<link rel="stylesheet" type="text/css" href="D:\SHUBHAM\swiggy\index.css">
+<body>
+
+ <div class="container">
+
+  <a href="index.html" class="logo"></a>
+    
+  <a id="sidebarToggle" class="other" onclick="toggleSidebar()">
+    Other
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px" style="margin-left: 5px;">
+        <path fill="none" stroke="rgb(255, 94, 0)" stroke-width="2" d="M6 10l6 6 6-6"/>
+    </svg>
+</a>
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+    <button id="closeBtn" class="closeBtn" onclick="toggleSidebar()">&times;</button>
+  <input type="text" placeholder="search for area, street name"><br>
+   <a> 	
+    Get current location<br>
+    Using GPS</a>
+</div>
+
+
+<div id="sidebar2" class="sidebar2">
+  <button id="closeBtn2" class="closeBtn2" onclick="toggleSidebar2()">&times;</button>
+  <a href="login.html">Login</a>
+</div>
+
+   
+    
+      <ul class="nav">
+          <li><a class="cor" href="#home"><img src="D:\SHUBHAM\swiggy\images\briefcase.png" style="width: 20px;height:20px;top:5px;"> Swiggy Corporate</a></li>
+          <li>
+            <a class="serch" href="#home">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="margin-top: 5px;">
+                <path class="icon" d="M19.06 17.56l-3.44-3.43C16.21 12.38 17 10.79 17 9c0-3.87-3.13-7-7-7s-7 3.13-7 7s3.13 7 7 7c1.79 0 3.38-.79 4.53-2.03l3.43 3.44L19.06 17.56zM10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6s6 2.69 6 6s-2.69 6-6 6z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+              Search
+            </a>
+          </li>
+          
+          <li><a class="serch" href="#home"><i style="font-size:24px" class="fa">&#xf002;</i> Offers <span class="ribbon">NEW</span></a></li>
+
+          <li><a class="serch" href="#home"><i style="font-size:24px" class="fa">&#xf002;</i> Help</a></li>
+
+
+          <li><a class="serch" href="#home"  id="sidebarToggle2" onclick="toggleSidebar2()"><i style="font-size:24px" class="fa">&#xf002;</i> Sign in</a></li>
+
+
+          <li><a class="serch" href="#home"><i style="font-size:24px" class="fa">&#xf002;</i> Cart</a></li>
+      </ul>
+    </div>
+
+
+
+
+
+  <br><br><BR><BR><BR>
+
+    <div class="footer">
+    <a style="font-size: xx-large; font-weight:bolder">What's on your mind?</a>
+
+  <button class="prev1" onclick="prevSlide1()" style="display: flex;">&#10094;</button>
+  <button class="next1" onclick="nextSlide1()" style="display: flex;">&#10095;</button>
+
+    
+    <div class="slider-container1">
+      <div class="slider1">
+        <div class="slide1">
+    <a href="burger.html"><img src="images\Burger.png" href="" style="width:150px; cursor:pointer;">
+  </div></a>
+
+  <div class="slide1">
+    <img src="images\Chinese.png" style="width:150px; margin-left:20px;cursor:pointer;">
+  </div>
+
+
+
+  <div class="slide1">
+    <img src="images\Pizza.png" style="width:150px; margin: left 30px;cursor:pointer;">
+  </div>
+
+      <div class="slide1">
+    <img src="images\North.png" style="width:150px; margin-left:20px;cursor:pointer;">
+      </div>
+
+      <div class="slide1">
+      <img src="images\Biryani.png" style="width:150px; margin-left:20px;cursor:pointer;">
+    </div>
+
+    <div class="slide1">
+      <img src="images\Rolls.png" style="width:150px; margin-left:20px;cursor:pointer;"></div>
+   
+      <div class="slide1">
+        <img src="images\Salad.jpg" style="width:150px; margin-left:20px;cursor:pointer;">
+      </div>
+
+      <div class="slide1">
+        <img src="images\Salad.jpg" style="width:150px; margin-left:20px;cursor:pointer;">
+      </div>
+
+    <div class="slide1">
+    <img src="images\Cakes.jpg" style="width:150px; margin-left:20px;cursor:pointer;">
+    </div>
+
+    <div class="slide1">
+    <img src="images\Khichdi.jpg" style="width:150px; margin-left:20px;cursor:pointer;">
+  </div>
+
+  <div class="slide1">
+    <img src="images\South_Indian_4.jpg" style="width:150px; margin-left:20px;cursor:pointer;">
+  </div>
+    <br><br>
+
+  
+  </div>
+    </div>
+    <hr style="width:960px; color:aliceblue">  
+    <br><br>
+
+
+<!-- whats on your mind done -->
+<button class="prev2">Previous</button>
+<button class="next2">Next</button>
+<a style="font-size:xx-large; font-weight:bolder; z-index:-1 ">
+    Top restaurant chains in Mumbai
+</a><br>
+
+
+
+<div class="slider-container2">
+    <div class="slider2">
+        <div class="slide2">
+            <img src="images\Bbq.jpg" alt="Barbeque Nation">
+            <div class="info2">
+                <a>Barbeque Nation<br>
+                3.9 • 35-40 mins<br>
+                North Indian, Barbecue....<br>
+                Bandra East</a>
+            </div>
+        </div>
+
+        <div class="slide2">
+            <img src="images\Chinese work.jpg" alt="Chinese Wok">
+            <div class="info2">
+                <a>Chinese Wok<br>
+                3.9 • 25-30 mins
+                <br>Chinese, Asian, Tibetan, Desserts
+                <br>Santacruz East</a>
+            </div>
+        </div>
+
+        <div class="slide2">
+            <img src="images\pizzahut.jpg" alt="Chinese Wok">
+            <div class="info2">
+                <a>Pizza Hut<br>
+                3.9 • 50-55 mins
+                <br>Pizzas
+                <br>kurla West</a>
+            </div>
+        </div>
+
+        <div class="slide2">
+            <img src="images\Ubq.jpg" alt="Chinese Wok">
+            <div class="info2">
+                <a>UBQ BY BARBECUE NATION
+                <br>4 • 35-40 mins
+                <br>North Indian,Barbecue,Biryani...<br>
+                Bandra East<br></a>
+            </div>
+        </div>
+
+        <div class="slide2">
+            <img src="images\mcdo.jpg" alt="Chinese Wok">
+            <div class="info2">
+                <a>McDonald's
+                <br>4.4 • 25-30 mins
+                <br>Burgers,Bevrages,Cafe,Desserts
+                <br>>Santacruz East</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+
+<a style="font-size:xx-large; font-weight:bolder">Restaurants with online food delivery in Mumbai</a><br><BR>
+
+<div class="nav1">
+<li><a>Filter<img src="D:\SHUBHAM\swiggy\images\filter.jpg" width="25px"></a></li>
+<li><a>Sort By
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25px" height="25px" style="margin-left:5px;">
+        <path fill="none" stroke="rgb(0, 0, 0)" stroke-width="2" d="M6 10l6 6 6-6"/>
+    </svg>
+</a>
+</a></li>
+<li><a>Fast Delivery</a></li>
+<li><a>New on Swiggy</a></li>
+<li><a>Rating 4.0+</a></li>
+<li><a>Pure Veg</a></li>
+<li><a>Offers</a></li>
+<li><a>Rs 300-600</a></li>
+<li><a>less than 300</a></li>
+</div>
+
+
+
+<div class="slider">
+  <div class="slide">
+    <img src="images/Bbq.jpg" alt="Barbeque Nation">
+    <div class="info">
+      <a>Barbeque Nation<br>3.9 • 35-40 mins<br>North Indian, Barbecue....<br>Bandra East</a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/Chinese work.jpg" alt="Chinese Wok">
+    <div class="info">
+      <a>Chinese Wok<br>3.9 • 25-30 mins<br>Chinese, Asian, Tibetan,....<br>Santacruz East</a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/pizzahut.jpg" alt="Pizza Hut">
+    <div class="info">
+      <a>Pizza Hut<br>3.9 • 50-55 mins<br>Pizzas<br>Kurla West</a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/Ubq.jpg" alt="UBQ BY BARBECUE">
+    <div class="info">
+      <a>UBQ BY BARBECUE....<br>4 • 35-40 mins<br>North Indian, Barbecue,...<br>Bandra East<br></a>
+    </div>
+  </div>
+  <div class="slide">
+    <img src="images/mcdo.jpg" alt="McDonald's">
+    <div class="info">
+      <a>McDonald's<br>4.4 • 25-30 mins<br>Burgers, Beverages,...<br>Santacruz East</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/BK.jpg" alt="McDonald's">
+    <div class="info">
+      <a>Burger King<br>4.3 • 30-35 mins<br>Burgers American<br>Santacruz East</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/Kfc.jpg" alt="McDonald's">
+    <div class="info">
+      <a>KFC<br>4.1 • 45-50 mins<br>Burgers,Fast Food,Rolls...<br>Sakinaka</a>
+    </div>
+  </div>
+
+  <div class="slide">
+    <img src="images/Dominos.jpg" alt="McDonald's">
+    <div class="info">
+      <a>Domino's Pizza<br>3.7 • 20-25 mins<br>Pizzas,Italian,Pastas,..<br>Sakinaka</a>
+    </div>
+  </div>
+</div>
+<!-- online food delivery done -->
+
+<hr><br>
+<a style="font-size:xx-large; font-weight:bolder">Best Places  To Eat Across Cities</a>
+<div class="places">
+<div class="place">
+   Best Resturants in Kolkata
+</div>
+
+<div class="place">
+  Best Resturants in Pune
+</div>
+
+<div class="place">
+  Best Resturants in Jaipur
+</div>
+
+<div class="place">
+  Best Resturants in Nagpur
+</div>
+
+<div class="place">
+  Best Resturants in Delhi
+</div>
+
+<div class="place">
+  Best Resturants in Vizag
+</div>
+<div class="place">
+  Best Resturants in Patna
+</div>
+<div class="place">
+  Best Resturants in Kochi
+</div>
+
+<div class="place">
+  <div class="tooltip">Best Resturants in.........
+    <span class="tooltiptext"> Best Resturants in Udaipur </span>
+  </div>
+</div>
+<div class="place">
+  Best Resturants in Ranchi
+</div>
+<div class="place">
+  Best Resturants in Noida
+</div>
+<div class="place">
+  Best Resturants in Agra
+</div>
+</div>
+<br><BR><BR>
+
+  <a style="font-size:xx-large; font-weight:bolder"> Best Cuisine Near Me</a>
+
+  <div class="places">
+    <div class="place">
+      Chinese Restaurants near me
+    </div>
+
+    <div class="place">
+      South Indian Restaurants .....
+    </div>
+
+    <div class="place">
+      Indian Restaurants near me
+    </div>
+
+    <div class="place">
+      Kerala Restaurants near me
+    </div>
+
+    <div class="place">
+      korean Restaurants near me
+    </div>
+
+    <div class="place">
+      North Indian Restaurants .....
+    </div>
+
+    <div class="place">
+      Seafood Restaurants near me
+    </div>
+
+    <div class="place">
+      Bengali Restaurants near me
+    </div>
+
+    <div class="place">
+      Punjabi Restaurants near me
+    </div>
+
+    <div class="place">
+     Italian Restaurants near me
+    </div>
+
+    <div class="place">
+      Andhra Restaurants near me
+    </div>
+
+    <div class="place">
+      Show More
+    </div>
+  </div><BR><BR><BR>
+
+    <a style="font-size:xx-large; font-weight:bolder">Explore Every Resturant near me</a>
+    <div class="res">
+    <div class="res1">
+        Explore Restaurants Near ME
+      </div>  
+
+      <div class="res1">
+        Explore Top Rated Restaurants Near Me
+      </div>
+    </div>
+</div>
+<br><BR><br><br><br><br>
+  <div class="footer2">
+    <br>
+    <a style="margin-left: 180px; display: block;">For better experience, download<br> the Swiggy app now</a>
+    <a><img src="images/play.png" style="border-radius: 15px; width: 200px; cursor: pointer;height: 70px; margin-left: 680px; margin-top: -65px;position: absolute;"></a>
+    <a><img src="images/app store.png" style="border-radius: 15px; width: 200px;cursor: pointer; height: 70px; margin-left: 900px; margin-top: -65px;position: absolute;"></a>
+    <br>
+</div>
+
+  <div class="footer3">
+<BR><BR><BR>
+    <a style="margin-left: 200px; color: white; font-size:x-large;display: flex;font-weight: bolder;"><img src="images/swiggy.png" style="width: 25px;">&ensp;Swiggy</a>
+   <A style="color: rgb(209, 199, 199); margin-left: 200px; font-weight: bold;"> © 2024 Bundl</A>
+   <br> <a style="color: rgb(209, 199, 199); margin-left: 200px;font-weight: bold;">Technologies Pvt. Ltd</a>
+
+<a style="color: rgb(255, 255, 255);font-size:larger;cursor: pointer;margin-left: 71px;position: absolute;margin-top: -51px;font-weight: bolder "> Company</a><br>
+<a  style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;margin-top: -40px;position: absolute;">About</a><br>
+<a  style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;margin-top: -30px;position: absolute">Careers</a><br>
+<a  style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;margin-top: -20px;position: absolute">Team</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;margin-top: -10px;position: absolute"> Swiggy One</a><br>
+<a  style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;">Swiggy Instamart</a><br>
+<p  style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 420px;margin-top: 10px;">Swiggy Genie</p>
+     
+
+<a style="color: rgb(255, 255, 255);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-220px;font-weight: bolder ; ">Contact Us</a>
+<br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-210px;">Help & Support</a>
+
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-180px;">Partner with us</a>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-150px;">Ride with us</a><br><br><br><br><br></br>
+
+<a style="color: rgb(255, 255, 255);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-180px;font-weight: bolder ; ">Legal</a><br>
+
+
+
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-170px;font-weight: bolder;">Terms & Conditions</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-160px;font-weight: bolder;">Cookie Policy</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-150px;font-weight: bolder;">Privacy Policy</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 641px;position:absolute;margin-top:-140px;font-weight: bolder;">Investor Relations</a>
+
+
+<a style="color: rgb(255, 255, 255);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-425px;font-weight: bolder ; ">We deliver to:</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-415px;  ">Bangalore</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-405px ; ">Gurgaon</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-395px; ">Hyderabad</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-385px;">Delhi</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-375px;">Mumbai</a><br>
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 900px;position:absolute;margin-top:-365px;">Pune</a><br>
+
+<a style="color: rgb(209, 199, 199);font-size:larger;cursor: pointer;margin-left: 920px;position:absolute;margin-top:-345px;">589 cities</a>
+</div>
+</body>
+</html>
