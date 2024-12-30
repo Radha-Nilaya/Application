@@ -35,17 +35,20 @@
     justify-content: space-between;
     padding: 20px;
     border: 1px solid black;
+    height: 360px;
 }
 
 .topic-group {
     background-color: #fff;
-    margin: 10px;
+    margin: 15px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex-basis: 23%; /* Each group takes 23% width */
     text-align: center;
     box-sizing: border-box;
+    border: 1px solid black;
+    height: 300px;
 }
 
 h3 {
@@ -60,11 +63,16 @@ ul {
 
 ul li {
     color: #666;
-    font-size: 0.9em;
-    margin: 5px 0;
+    font-size: 1.3rem;
+    margin: 12px 0;
     border: 1px solid black;
 }
-
+ul li:hover{
+    font-size: 1.5rem;
+    color: white;
+    background-color: green;
+    font-weight: bold;
+}
 /* Mobile Responsiveness */
 @media (max-width: 1024px) {
     .topic-group {
@@ -84,7 +92,9 @@ ul li {
     }
 
     .topic-group {
-        flex-basis: 20%; /* Stacks vertically on very small screens */
+        flex-basis: 50%; /* Stacks vertically on very small screens */
+        margin-left: -15px;
+        gap: 40;
     }
 }
 .about .box-container {
@@ -366,37 +376,33 @@ ul li {
      <div class="swiper-slide" style="text-align: center; font-size: 2rem;"><img src="cricket turf.jpg" alt="Image 14"><br>Cricket Turf</div>
  </div>
 <!-- Pagination -->
-<div class="swiper-pagination" style="margin-bottom: -110px;"></div>
+<div class="" ></div>
 </div>
 <h1>List of Amenities</h1>
 <div class="topics-container">
-  <div class="topic-group">
+  <div class="topic-group" id="d1">
       <ul>
           <li>Rera Approved</li>
           <li>Solar Power</li>
           <li>Water Harvesting</li>
           <li>Sewage treatment plant</li>
           <li>Lift</li>
+          <li>Security</li>
+          <li>Senior Citizen Area</li>
+          <li>Garden</li>
       </ul>
   </div>
-  <div class="topic-group">
+  <div class="topic-group" id="d2">
       <ul>
           <li>Mandir</li>
           <li>Gaushala</li>
           <li>Gurukul</li>
           <li>Outdoor Gym</li>
           <li>Jogging Track</li>
-      </ul>
-  </div>
-  <div class="topic-group">
-      <ul>
-          <li>Security</li>
-          <li>Senior Citizen Area</li>
-          <li>Garden</li>
           <li>CCTV surveillance</li>
           <li>Cricket Turf</li>
       </ul>
-  </div>
+    </div>
 </div>
 <!-- Amenities swction ends-->
 
@@ -435,26 +441,7 @@ ul li {
  <!-- projects section ends -->
 
  <!-- Nearby places -->
- <div class="topics-container1">
-    <div class="topic-group">
-        <ul>
-            <li>Rera Approved</li>
-            <li>Solar Power</li>
-            <li>Water Harvesting</li>
-            <li>Sewage treatment plant</li>
-            <li>Lift</li>
-        </ul>
-    </div>
-    <div class="topic-group">
-        <ul>
-            <li>Mandir</li>
-            <li>Gaushala</li>
-            <li>Gurukul</li>
-            <li>Outdoor Gym</li>
-            <li>Jogging Track</li>
-        </ul>
-    </div>
- </div>
+ 
  <!-- Nearby Places End-->
  <!-- floor plan start-->
   <h1 class="heading" style="margin-top: 30px;">Floor Plan</h1>
@@ -572,7 +559,7 @@ ul li {
  
  <!-- contact section starts  -->
 
-<section class="contact" id="contact">
+<section class="contact" id="contact" style="margin-top: 50px;">
 
     <h1 class="heading"> contact us </h1>
  
